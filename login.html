@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZaMiSolution Free Wifi</title>
+		<style>
+		      @font-face {
+		        font-family: Myriad Pro;
+		        font-style: normal;
+		        font-weight: 400;
+		        src: url(fonts/MyriadPro-Regular.otf);
+		      }
+		</style>
+	    <link rel="shortcut icon" href="images/icofile.ico" type="image/x-icon" />
+	    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all"/>
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="all"/>
+		<link rel="stylesheet" href="css/responsiveslides.css" />
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/responsiveslides.js"></script>
+		<script>
+			$(function () {
+			  $("#slidez").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: false,
+				speed: 400,
+				maxwidth: 960,
+				namespace: "centered-btns"
+			  });
+			});
+		</script>
+		<script src="js/jquery.smooth-scroll.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $('div.login a').smoothScroll();
+			});
+		</script>
+	</head>
+
+	<body style="margin: 0;padding: 0;font-family: Myriad Pro;font-size: 18px;line-height: 1.5;">
+
+		<!--==============================Header=================================-->
+		<div class="container">
+					<!-- Slider -->
+						<div class="slider_bg">
+							<div class="slider-response">
+								<div class="rslides_container">
+									<ul class="rslides" id="slidez">
+										<li><img src="images/pic1.jpg" alt=""></li>
+										<li><img src="images/pic2.jpg" alt=""></li>
+									</ul>
+								</div>
+		                    </div>
+						</div>
+					<!-- Internet Login-->
+					<div class="login">	
+						    <div class="text-normal" style="display:inline-flex;font-size:17px;"> Sử dụng SĐT để nhận quà tặng:</div>
+					        <form id="form" class="button" name="login" action="$(link-login-only)" method="post"  $(if chap-id) onSubmit="return doLogin()" $(endif) style="display: inline-flex;">
+					              <input type="hidden" name="dst" value="$(link-orig)" />
+					              <input type="hidden" name="popup" value="false" />
+					              <input placeholder="Nhập SĐT của bạn" style="outline: none;" class="input f14" name="username" required >
+					              <input class="button-connect" type="submit" name="commit" value="Kết nối" >
+					        </form>
+
+					        <form id="form1" name="flogin" action="$(link-login-only)" method="post"  $(if chap-id) onSubmit="return dofLogin()" $(endif) style="display: inline-flex;" >
+					            <div class="text-normal" style="text-align:left;padding:2px 10px 2px 10px;font-size:17px;">Hoặc, kết nối miễn phí tại đây!</div>
+					            <input type="hidden" name="dst" value="$(link-orig)" />
+					            <input type="hidden" name="popup" value="false" />
+					            <p align="center" style="margin: 0px;"><input class="btn" type="submit" name="commit" value="Click!" style="background:#db1212;padding:6px 22px 6px 22px;border-bottom:2px solid #756565;border-radius:5px;font-size:13px;width:100%;" /></p>
+					        </form>
+						<div>
+				        	<div class="text-blue f14" style="margin-top: 18px;">(Đồng ý Điều khoản sử dụng mạng Wi-Fi.)</div>
+				        </div>
+				        <div class="small-container">
+					        <div class="text-blue bold" style="margin-top: 10px;"><i>Chào đón đến với ZaMiSolution !</i>
+					        </div>
+				        </div>
+					</div>
+
+						<div class="footer w-100">
+					      <div class="text-center">
+					        <div class="flex w-100" style="justify-content: space-between;">
+					          <div class="" style="color: #0000006b;">https://zamisolution.vn</div>
+					          <div class="text-blue" >Trợ giúp?</div>
+					        </div>
+					      </div>
+					    </div>
+
+		$(if chap-id)
+    
+    
+      <form name="sendin" action="$(link-login-only)" method="post" id="third" style="display:none">
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="https://zalo.me/s/680726027734913691/?gidzl=c88QMUfv7bQVdHzMwMOPM9cU7L_qP4bVWir9KVbb65BPbX01ecuLLTIH5L2YFq01Wv120353oZ0twdaQMm" />
+      <input type="hidden" name="popup" value="false" />
+      </form>
+  
+      
+      <script type="text/javascript" src="/md5.js"></script>
+      <script type="text/javascript">
+      <!--
+      function doLogin() {
+      var password = '123';
+   
+      document.sendin.username.value = document.login.username.value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + password + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+        }
+    
+      function dofLogin() {
+      var password = '88888888';
+      var username = '88888888'
+   
+      document.sendin.username.value = username;
+      document.sendin.password.value = hexMD5('$(chap-id)' + password + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+        }      
+      //-->
+      </script>
+      $(endif)
+      
+      <script type="text/javascript">
+      <!--
+        document.login.username.focus();
+      //-->
+      </script>
+      <!--
+        var username = '12345678'
+
+        document.sendin.username.value = username;
+        document.sendin.username.value = document.login.username.value;-->
+	</body>
+</html>

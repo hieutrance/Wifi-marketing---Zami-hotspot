@@ -1,0 +1,153 @@
+article,
+aside,
+audio,
+canvas,
+command,
+datalist,
+details,
+embed,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+keygen,
+meter,
+nav,
+output,
+progress,
+section,
+source,
+video {
+    display: block
+}
+@font-face {
+font-family: Myriad Pro;
+font-style: normal;
+font-weight: 400;
+src: url(fonts/MyriadPro-Regular.otf);
+}
+
+*, *::before, *::after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Myriad Pro;
+    font-size: 15px;
+    line-height: 1.5;
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9
+}
+input:focus, input:hover, input:active {
+    outline: none;
+}
+.container {
+    max-width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden
+    background: #faf3ed
+}
+.slider_bg {
+    width: auto;
+    height: auto;
+    background: #FAF3ED;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.login {
+    text-align: center;
+}
+.footer {
+    border-top: 1px solid #dadada;
+    margin-top: 24px;
+    border-bottom: 1px solid #dadada;
+    padding: 7px 12px 6px 12px;
+}
+.input{
+    color: rgba(0,0,0,0.4);
+    border:0px;
+    padding: 6px 10px 6px 10px;
+    /*padding: 10px;*/
+    border-radius: 30px;
+    overflow: hidden;
+    outline: none;
+}
+.input::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+button {
+    outline: none;
+}
+.button-connect{
+    /*border-radius: 0 25px 25px 0;*/
+    border-radius: 5px;
+    padding-right: 22px;
+    padding-left: 22px;
+    background: #45abf3;
+    /*background: #f49320;*/
+    border-bottom: 2px solid #756565;
+}
+#form {
+    /*margin-top: 20px; khong dùng cho form2*/
+    border: 1px solid #7c4d36;
+    /*border-radius: 28px;*/
+    border-radius: 5px;
+    padding: 1px; /*4px - form3*/
+    max-width: 100%;
+}
+#form1 {
+    margin-top: 10px;
+    /*border: 1px solid #7c4d36;
+    border-radius: 28px;*/
+    border-radius: 5px;
+    padding: 1px; /*4px - form3*/
+    max-width: 100%;
+}
+.flex{
+    display: inline-flex;
+}
+.text-normal{
+    color: #000;
+}
+.text-blue{
+    color: #18b4c9;
+}
+.text-yellow{
+    color: #f7ff58;
+}
+.bold {
+    font-weight: bold;
+}
+.w-100{
+    width: 100%
+}
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f18 {
+    font-size: 18px;
+}
+.mt60 {
+    margin-top: 60px;
+}
