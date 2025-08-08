@@ -32,7 +32,4 @@ This project contains the **initial code for a captive portal** used in WiFi mar
 
 MIT License. Feel free to customize and deploy for your own business or client needs.
 
----
 
-**Author:** HIUCHAN\trung  
-**Initial Commit:** f7af1ca  
